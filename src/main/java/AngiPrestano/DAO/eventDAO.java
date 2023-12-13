@@ -15,7 +15,7 @@ public class eventDAO {
     }
     public void save(event event) {
         EntityTransaction transaction = em.getTransaction();
-        // inizio transazione 
+        // inizio transazione
         transaction.begin();
         em.persist(event);
         transaction.commit();

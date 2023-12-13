@@ -20,7 +20,7 @@ public class event {
     @Column(name = "number_max_partecipate")
     private int numberMaxPartecipate;
 
-    public event() {
+    public event(String station19, LocalDate localDate) {
     }
 
     public event(String title, LocalDate dateEvent, String description, AngiPrestano.entities.eventType eventType, int numberMaxPartecipate) {
